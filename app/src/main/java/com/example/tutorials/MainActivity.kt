@@ -9,9 +9,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Adapter
 import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Spinner
@@ -23,8 +21,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Go to Home Activity
+        val goHome:Button = findViewById(R.id.btnGoHome)
+        goHome.setOnClickListener {
+            startActivity(Intent(this@MainActivity,HomeActivity::class.java))
+        }
+
         //Spinner Created
         val spinMonth: Spinner = findViewById(R.id.spMonths)
+
         /** custom list added
         val customList = listOf("First","Second","Third","Fourth")
         val adapter = ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,customList)
