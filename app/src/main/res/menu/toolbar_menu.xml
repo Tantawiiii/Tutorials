@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idSports"
+        android:title="Sports"
+        android:icon="@drawable/ic_sports"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/idFav"
+        android:title="Favorites"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/idSetting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/idFeedback"
+        android:title="Feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/idCloseApp"
+        android:title="Close App"
+        app:showAsAction="never"/>
+
+</menu>
