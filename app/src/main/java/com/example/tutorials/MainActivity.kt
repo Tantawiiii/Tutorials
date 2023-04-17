@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.Toast
+import com.example.tutorials.Home.HomeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +25,13 @@ class MainActivity : AppCompatActivity() {
         //Go to Home Activity
         val goHome:Button = findViewById(R.id.btnGoHome)
         goHome.setOnClickListener {
-            startActivity(Intent(this@MainActivity,HomeActivity::class.java))
+            startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+        }
+
+        //Go to Details Activity == Fragment
+        val goDetails:Button = findViewById(R.id.btnGoDetails)
+        goDetails.setOnClickListener {
+            startActivity(Intent(this@MainActivity, DetailsActivity::class.java))
         }
 
         //Spinner Created
